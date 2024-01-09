@@ -7,28 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div id = "time"></div>
-        <div class = "clock">
-            <div class="hours">
-                <input type="text" id="input-hours" value="00">
-            </div>
-            <div class="minutes">
-                <input type="text" id="input-minutes" value="00">
-            </div>
-            <div class = "seconds">
-                <input type="text" id="input-seconds" value="00">
-            </div>
-        </div>
+    <h3>Enter time in HH:MM:SS format</h3>
+    <div class = "time-input">
+        <input class = "input hours" type="number" placeholder= "HH" id="hours" min="0">
+        <input class = "input minutes" type="number" id="minutes" placeholder= "MM" min="0" max="59">
 
-        <div class = "buttons">
-            <button class="button start">START</button> 
-            <button class="button reset">RESET</button>
+        <input class = "input seconds"  type="number" id="seconds" placeholder= "SS" min="0" max="59">
+    </div>
 
-        </div>
-        
+    <div class="buttons">
+        <button class = "button" id= "start">Start</button> 
+        <button class = "button" id= "reset">Reset</button> 
+
 
     </div>
+
+    <div class ="timer" id ="timer">
+        <div class = "time hours" id = "hours-remaining">00</div>
+        <div class = "time minutes" id = "minutes-remaining">00</div>
+        <div class = "time seconds" id="seconds-remaining">00</div>
+    </div>
+
 
 
 

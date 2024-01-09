@@ -1,75 +1,44 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
 
-
-.container{
-    margin: 5px;
-    background-color: white;
-    height: 100vh;
-    width: 100;
-    border: 5px solid black;
-    overflow: hidden;
-
-}
-
-.clock{
-    height: 50vh;
-    background-color: aqua;
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h3 {
     text-align: center;
 }
-.hours{
-    display: flex;
-    height:100%;
-    background-color: blue;
-    font-size: 50vh;
-
-}
-
-#input-hours, #input-minutes, #input-seconds{
-    font-size: 30vh;
-    background-color: blueviolet;
-    width: 100%;
-}
-    
-    
-
-
-.minutes{
-    height:100%;
-    background-color: red;
-    font-size: 50vh;
-
-}
-.seconds{
-
-    height:100%;
-    background-color: rgb(0, 255, 42);
-    font-size: 50vh;
+.time-input{
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
     text-align: center;
-    width: 100%;
-    background-color: brown;
+    justify-content: center;
+
 }
 .button{
-    height: 10vh;
-    width: 20vh;
-    margin: 30px;
-    font-size: larger;
+    margin: 20px
+}
+.input {
+    width: 100px; /* Adjust the width as needed */
+    padding: 15px; /* Adjust the padding as needed */
+    margin: 10px; /* Adjust the margin as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.start{
-    background-color: green;
+.timer{
+    opacity: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: aqua;
+    height: 50vh;
+}
+
+.time{
+    font-size: 50vh;
+    margin: 0px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50vh;
+    
 }
